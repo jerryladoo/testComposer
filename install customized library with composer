@@ -1,0 +1,28 @@
+option 1: install customized library withouth any composer.json inside
+{
+    "require": {
+        "symfony/console": "~2.6"
+    },
+    "repositories": [
+      {
+        "type": "package",
+        "package": {
+          "name": "jerryladoo/brolly-collector-facebook",
+          "version": "dev-master",
+          "source": {
+            "url": "https://github.com/jerryladoo/brolly-collector-facebook.git",
+            "type": "git",
+            "reference": "dev"
+          },
+          "autoload": {
+            "psr-0" : {
+              "Ladoo\\FacebookDataCollector" : "src"
+            }
+          }
+        }
+      }
+    ],
+    "require": {
+      "jerryladoo/brolly-collector-facebook": "dev-master"
+    }
+}

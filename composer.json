@@ -1,0 +1,12 @@
+{
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/jerryladoo/brolly-collector-facebook"
+      }
+    ],
+    "require": {
+      "symfony/console": "~2.6",
+      "ladoo/brolly-collector-facebook": "dev-master"
+    }
+}
